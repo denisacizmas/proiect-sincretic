@@ -55,6 +55,22 @@ int main()
 
     vector<string> culori = { "Rosu", "Verde", "Galben", "Crem", "Albastru", "Roz"};
 
+     colorare(tari, culori);
+
+        for (const auto& tara : tari)
+            cout << "Tara: " << tara.nume << " |  Culoare: " << tara.culoare << endl;
+
+        bool necolorate = false;
+
+        for (const auto& tara : tari)
+            if (tara.culoare.empty())
+            {
+                necolorate = true;
+                break;
+            }
+
+        if (necolorate)
+            cout << "Nu au fost culori suficiente pentru a colora toate tarile respectand cerinta" << endl;
 
     return 0;
 }
