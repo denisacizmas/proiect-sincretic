@@ -1,2 +1,3 @@
 # proiect-sincretic
+
  
