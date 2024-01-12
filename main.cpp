@@ -40,6 +40,21 @@ void colorare(vector<Tara>& tari, const vector<string>& culori)
 
 int main()
 {
+        vector<Tara> tari = {
+        {"A", {"B", "C", "D", "E"}},
+        {"B", {"A", "D"}},
+        {"C", {"A", "D", "E"}},
+        {"D", {"A", "B", "C", "E"}},
+        {"E", {"A", "C", "D"}},
+        {"F", {"G", "H", "I", "J"}},
+        {"G", {"F", "H", "I", "J"}},
+        {"H", {"F", "G", "I"}},
+        {"I", {"F", "G", "H", "J"}},
+        {"J", {"F", "G", "I"}}
+    };
+
+    vector<string> culori = { "Rosu", "Verde", "Galben", "Crem", "Albastru", "Roz"};
+
 
     return 0;
 }
